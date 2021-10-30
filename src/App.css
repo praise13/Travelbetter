@@ -1,38 +1,456 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: calibri light;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.first{
+  width: 100%;
+  height: 500px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.header{
+  width: 90%;
+  height: 80px;
+  background-color:transparent;
+  color: white;
+  margin-left: 5%;
+  margin-top: 15px;
+  float: left;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.first-main{
+  width: 90%;
+  height: 350px;
+  background-color:transparent;
+  margin-left: 5%;
+  margin-top: 25px;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+
+}
+
+.logo{
+  width: 20%;
+  display: flex;
+  text-decoration: none !important;
+}
+
+.form{
+  background-color:transparent;
+  width: 40%;
+  margin-top: 2%;
+  padding: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main-input{
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-input input{
+  height: 3.5vh;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid darkorange;
+  outline: none;
+  color: white;
+}
+
+
+.lastname{
+  margin-left: 6%;
+}
+
+.label-1{
+  display: flex;
+
+}
+
+.label-2{
+  margin-top: 2%;
+}
+
+.label-2 input{
+  width: 60%;
+  height: 3.5vh;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid darkorange;
+  outline: none;
+  color: white;
+}
+
+.label-3{
+  margin-top: 2%;
+}
+
+.label-3 input{
+  width: 60%;
+  height: 3.5vh;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid darkorange;
+  outline: none;
+  color: white;
+}
+
+.people{
+  margin-top: 2%;
+  display: flex;
+}
+
+.children{
+  margin-left: 6%;
+}
+
+.children input{
+  width: 100%;
+}
+
+.people input{
+  height: 3.5vh;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid darkorange;
+  outline: none;
+  color: white;
+}
+
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+header h3 a{
+  text-decoration: none;
+}
+
+.links{
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  background-color: transparent;
+}
+
+.center-links ul{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-top: 3%;
+  
+}
+
+.center-links a{
+  text-decoration: none;
+  color:white;
+}
+
+.center-links ul li:hover{
+   border-bottom:1px solid green;
+   transition: 3s;
+}
+.center-links{
+  width: 55%; 
+}
+
+.host{
+  width: 28%;
+  list-style: none;
+  background-color: transparent;
+}
+.register{
+  text-align: center;
+  margin-top: 3vh;
+}
+
+.register button{
+  width: 87%;
+  height: 40px;
+  color: black;
+  background-image: linear-gradient(to  right,green,white);
+  margin-right: 12%;
+  font-size: 22px;
+}
+
+.welcome-msg{
+  text-align: center;
+  margin-top: 4%;
+  padding-bottom: 100px;
+  background-color: transparent;
+  width: 40%;
+}
+
+.welcome-msg h1{
+  margin-bottom: 5px;
+  font-size: 51px;
+  color: whitesmoke;
+}
+
+.welcome-msg h3{
+  margin-bottom: 5px;
+  font-size: 22px;
+}
+
+.welcome-msg ul{
+  transition: 2s;
+}
+
+.welcome-msg ul:hover{
+ color: green;
+}
+
+.travel{
+  color: green;
+  font-size: 27px;
+  margin-top: 2.4%;
+}
+
+.safe{
+ margin-top: 4.5%;
+ font-size: 22px;
+ color: white;
+}
+
+.services{
+  width: 100%;
+  height: 10%;
+  margin-top: 2%;
+}
+
+
+.services-main{
+  width: 95%;
+  margin: auto;
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services-main p{
+  font-size: 20px;
+  font-style: oblique;
+}
+
+.services h1{
+  margin-left: 2.5%;
+}
+
+.service-img{
+  width: 35rem;
+  height: 70%;
+  border-radius: 15px;
+}
+
+.head{
+  color: black;
+}
+
+.big-card{
+  width: 95%;
+  height:20%;
+  margin: auto;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.head .safe{
+  color: black;
+}
+
+.head .center-links ul li{
+  color: black;
+}
+
+.head .center-links a{
+  color: black;
+}
+
+.h2{
+  margin-left: 2.5%;
+}
+
+.h2 h2{
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.places-body{
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: auto;
+
+}
+
+.card{
+  margin-top: 1.5%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+ 
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.text-center{
+  background-color: white;
+  font-size: 22px;
+  background-color:#6c757d;
+  color: white;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.exp-head .safe{
+  color: black;
+}
+.exp-head .center-links ul li a{
+  color: black;
+}
+
+.blog{
+  color: black;
+}
+
+.exp-body{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  font-size: 19px;
+  flex-wrap: wrap;
+
+}
+
+.main-process{
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+  margin: auto;
+  margin-top: 4%;
+}
+
+.child-process{
+  width: 32%;
+  font-size: 20px;
+  align-items: center;
+}
+
+.child-process i{
+  margin-bottom: 10px;
+}
+
+.fa-wpforms{
+  margin-left: 25%;
+  color: #dc3545;
+}
+
+.fa-phone,.fa-arrow-right,.fa-hotel{
+  margin-left: 10%;
+  color:#198754;
+}
+
+#com{
+  margin-left: 30%;
+  color: #0d6efd;
+}
+
+.comment{
+  height: 12vh;
+  margin-bottom: 4%;
+  width: 70%;
+}
+
+.name{
+  height: 8vh;
+  margin-bottom: 4%;
+  width: 70%;
+}
+
+.location{
+  height: 8vh;
+  margin-bottom: 4%;
+  width: 70%;
+}
+
+
+.main-converter{
+  margin-top: 8vh;
+}
+.sub-converter1{
+  margin-left: 2.5%;
+  text-align: center;
+}
+
+.sub-converter2{
+  margin: auto;
+  width: 95%;
+}
+
+.sub-converter2 iframe{
+  width: 100%;
+  margin-top: 2%;
+  height: 80vh;
+}
+
+.exp2{
+  text-align: center;
+   width: 97%;
+}
+
+.sub-converter1 h2{
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.sub-converter1 h4{
+  font-size: 27px;
+}
+
+.footer-1{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content:space-between;
+}
+
+.mission{
+  text-align: center;
+}
+
+.icons{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.fa-instagram{
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.blog .safe{
+  color: black;
+}
+
+.blog.center-links ul li{
+  color: black;
+}
+
+.blog .center-links a{
+  color: black;
 }
